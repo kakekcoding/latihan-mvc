@@ -31,4 +31,4 @@ install:
   git clone https://github.com/kakekcoding/latihan-mvc.git
 
 before_install:
-  apt-get install git
+  sudo apt-get install git
