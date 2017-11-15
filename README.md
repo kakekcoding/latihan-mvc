@@ -1,1 +1,2 @@
-# latihan-mvc
+# simple-mvc
+Hanya latihan.
