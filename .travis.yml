@@ -3,13 +3,11 @@ os: linux
 sudo: required
 
 php:
-    - 5.6
-    - 5.5
-    - 5.4
-    - 5.3
+    - 7.0
+    - 7.1
 
 script:
-    - if [[ ${TRAVIS_PHP_VERSION:0:3} == "5.6" ]]; then export CFLAGS="-Wno-deprecated-declarations -Wdeclaration-after-statement -Werror"; fi
+    - if [[ ${TRAVIS_PHP_VERSION:0:3} == "7.0" ]]; then export CFLAGS="-Wno-deprecated-declarations -Wdeclaration-after-statement -Werror"; fi
     - phpize #and lots of other stuff here.
     - make
 
